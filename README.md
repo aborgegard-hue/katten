@@ -33,8 +33,8 @@ Besök `/admin.html`. Ange `ADMIN_TOKEN` för att hämta väntande bidrag och go
 
 ## Inför AdSense
 
-Det finns **ingen annonskod** i denna version. Lägg till eget redaktionellt innehåll och färdigställ kontakt- och integritetsuppgifter. När AdSense-kontot och domänen är klara, konfigurera en Google-certifierad CMP (exempelvis Googles Privacy & messaging) och testa samtyckesflödet innan annonskod läggs in. Håll annonser utanför kartan och formuläret. AdSense-godkännande är inte garanterat.
+AdSense-koden för `ca-pub-4166940033126662` finns nu i `<head>` på webbplatsens HTML-sidor. Detta kopplar sidan till kontot men garanterar inte godkännande eller att annonser visas. Konfigurera en Google-certifierad CMP (exempelvis Googles Privacy & messaging) och testa samtyckesflödet. Fyll i ansvarig, kontakt och lagringstid i integritetspolicyn. Använd AdSense-inställningen **Excluded areas** för att hålla autoannonser borta från kartan och formuläret; uteslut även administrationssidan från autoannonser.
 
 ## Uppföljning
 
-Följ trafik i Cloudflare Web Analytics utan att lägga till annonsskript i förtid. Följ kostnader i Cloudflare/Loopia och annonsintäkter i AdSense efter godkännande.
+Följ trafik i Cloudflare Web Analytics när analysen har dokumenterats i integritetspolicyn. Följ kostnader i Cloudflare/Loopia och annonsintäkter i AdSense efter godkännande.
