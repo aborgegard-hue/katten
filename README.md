@@ -2,6 +2,10 @@
 
 Mobilanpassad memesida byggd för **[GitHub-repot katten](https://github.com/aborgegard-hue/katten) → Cloudflare Pages → kattenihatten.se hos Loopia**. Besökarnas bidrag lagras i Cloudflare D1 och visas först efter godkännande.
 
+## Förhandsvisning
+
+[GitHub Pages](https://aborgegard-hue.github.io/katten/) visar kartan med påhittade exempel. Där fungerar inte inskick eller administration eftersom GitHub Pages bara serverar statiska filer. De funktionerna kräver Cloudflare Pages och D1.
+
 ## Starta lokalt
 
 1. Installera Node.js och kör `npm install` i denna mapp.

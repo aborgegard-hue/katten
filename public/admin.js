@@ -9,7 +9,7 @@ function element(tag, value) {
 }
 
 async function refresh() {
-  const response = await fetch('/api/admin/observations', { headers: { Authorization: `Bearer ${token}` } });
+  const response = await fetch('api/admin/observations', { headers: { Authorization: `Bearer ${token}` } });
   const data = await response.json();
   if (!response.ok) { message.textContent = data.error || 'Kunde inte hämta bidrag.'; return; }
   list.replaceChildren();
@@ -28,7 +28,7 @@ async function refresh() {
       button.className = className;
       button.addEventListener('click', async () => {
         button.disabled = true;
-        const update = await fetch('/api/admin/observations', { method: 'PATCH', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ id: item.id, status }) });
+        const update = await fetch('api/admin/observations', { method: 'PATCH', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ id: item.id, status }) });
         if (update.ok) await refresh();
         else { message.textContent = (await update.json()).error || 'Kunde inte uppdatera.'; button.disabled = false; }
       });
@@ -39,9 +39,14 @@ async function refresh() {
   }
 }
 
-document.getElementById('admin-login').addEventListener('submit', async event => {
-  event.preventDefault();
-  token = document.getElementById('token').value;
-  document.getElementById('token').value = '';
-  try { await refresh(); } catch { message.textContent = 'Servern kunde inte nås.'; }
-});
+if (location.hostname.endsWith('.github.io')) {
+  document.getElementById('admin-login').style.display = 'none';
+  message.textContent = 'Administrationen finns bara på den färdiga Cloudflare-sidan.';
+} else {
+  document.getElementById('admin-login').addEventListener('submit', async event => {
+    event.preventDefault();
+    token = document.getElementById('token').value;
+    document.getElementById('token').value = '';
+    try { await refresh(); } catch { message.textContent = 'Servern kunde inte nås.'; }
+  });
+}

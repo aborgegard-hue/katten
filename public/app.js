@@ -31,12 +31,12 @@ function showObservations(observations, demo) {
 
 async function loadObservations() {
   try {
-    const response = await fetch('/api/observations');
+    const response = await fetch('api/observations');
     if (!response.ok) throw new Error('API saknas');
     const data = await response.json();
     showObservations(data.observations, false);
   } catch {
-    const response = await fetch('/demo-observations.json');
+    const response = await fetch('demo-observations.json');
     const data = await response.json();
     showObservations(data.observations, true);
   }
@@ -56,7 +56,7 @@ form.elements.observed_on.value = today;
 
 async function setupTurnstile() {
   try {
-    const response = await fetch('/api/config');
+    const response = await fetch('api/config');
     const config = await response.json();
     if (!config.turnstileSiteKey) return;
     const script = document.createElement('script');
@@ -77,7 +77,7 @@ form.addEventListener('submit', async event => {
   message.textContent = 'Skickar ditt tips…';
   const values = new FormData(form);
   try {
-    const response = await fetch('/api/observations', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ place: values.get('place'), observed_on: values.get('observed_on'), description: values.get('description'), lat: selectedPoint.lat, lng: selectedPoint.lng, turnstileToken: token }) });
+    const response = await fetch('api/observations', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ place: values.get('place'), observed_on: values.get('observed_on'), description: values.get('description'), lat: selectedPoint.lat, lng: selectedPoint.lng, turnstileToken: token }) });
     const result = await response.json();
     message.textContent = result.message || result.error || 'Något gick fel.';
     if (response.ok) { form.reset(); map.removeLayer(selectedMarker); selectedMarker = null; selectedPoint = null; document.getElementById('selected-location').textContent = 'Ingen punkt vald'; }
@@ -85,5 +85,11 @@ form.addEventListener('submit', async event => {
   finally { button.disabled = false; if (window.turnstile && turnstileWidget !== undefined) window.turnstile.reset(turnstileWidget); }
 });
 
+if (location.hostname.endsWith('.github.io')) {
+  document.querySelector('.hero-note').textContent = 'Detta är en förhandsvisning med påhittade exempel. Tipsfunktionen öppnar när Cloudflare är anslutet.';
+  document.getElementById('form-message').textContent = 'Tips kan inte skickas i denna förhandsvisning.';
+  form.querySelector('button[type="submit"]').disabled = true;
+} else {
+  setupTurnstile();
+}
 loadObservations();
-setupTurnstile();
