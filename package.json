@@ -1,0 +1,12 @@
+{
+  "name": "katten-i-hatten",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public --d1 DB=katten-i-hatten",
+    "check": "node --check public/app.js && node --check public/admin.js && node --check functions/api/observations.js && node --check functions/api/admin/observations.js && node --check functions/api/config.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
