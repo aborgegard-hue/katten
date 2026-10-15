@@ -3,9 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101923">
-  <meta name="description" content="Följ påstådda observationer av Katten i hatten på en lekfull karta över Sverige. Skicka in din egen berättelse.">
-  <title>Katten i hatten – observationskartan</title>
+  <meta name="theme-color" content="#0b0c0d">
+  <meta name="description" content="Katten i hatten i Sverige: följ trenden, utforska kartan med fiktiva observationer och lämna ditt eget tips. Vad handlar Katten i hatten om?">
+  <title>Katten i hatten i Sverige – Trend, karta och observationer</title>
+  <link rel="canonical" href="https://kattenihatten.se/public/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="Katten i hatten">
+  <meta property="og:title" content="Katten i hatten – trenden och kartan i Sverige">
+  <meta property="og:description" content="Utforska en interaktiv karta över fiktiva observationer av Katten i hatten i Sverige. Läs om trenden och lämna ett tips.">
+  <meta property="og:url" content="https://kattenihatten.se/public/">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Katten i hatten – observationskartan","url":"https://kattenihatten.se/public/","description":"En fristående, humoristisk observationskarta över fiktiva Katten i hatten-rapporter i Sverige.","inLanguage":"sv-SE"}</script>
   <link rel="preconnect" href="https://tile.openstreetmap.org">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
@@ -25,6 +34,7 @@
     <section class="map-section" id="kartan" aria-labelledby="map-title"><div class="section-heading"><div><p class="eyebrow">01 / KARTAN</p><h2 id="map-title">RAPPORTERADE SPÅR</h2><p>Klicka på en markering. Läs rapporten. Dra dina egna slutsatser.</p></div><div class="map-count" id="map-count">Laddar observationer…</div></div><div class="map-shell"><div id="map" role="application" aria-label="Karta över påstådda observationer i Sverige"></div><div class="map-overlay"><span class="map-overlay-dot"></span><span id="map-status">Söker efter spår…</span></div></div><p class="map-credit">Kartdata © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>. Platsmarkeringarna är ungefärliga.</p></section>
     <section class="report-section" id="rapportera" aria-labelledby="report-title"><div class="report-copy"><p class="eyebrow">02 / DITT TIPS</p><h2 id="report-title">HAR DU SETT <em>NÅGOT?</em></h2><p>Berätta var och när. Placera pinnen ungefärligt på kartan genom att trycka där det hände. Exakta adresser och personuppgifter hör inte hemma här.</p><div class="report-doodle" aria-hidden="true">↗<span>DIN TUR ATT RAPPORTERA</span></div></div><form id="report-form" class="report-card"><div class="card-title"><span>✳</span><strong>Skicka in en observation</strong></div><label>Ort <input name="place" autocomplete="address-level2" maxlength="80" minlength="2" required placeholder="Till exempel Umeå"></label><label>Datum <input name="observed_on" type="date" required></label><label>Vad hände? <textarea name="description" minlength="15" maxlength="500" required placeholder="Beskriv det märkliga mötet…"></textarea></label><div class="location-box"><div><strong>Ungefärlig plats</strong><small>Tryck på kartan ovan för att välja en punkt.</small></div><span id="selected-location">Ingen punkt vald</span></div><div id="turnstile" class="turnstile"></div><button class="button primary submit-button" type="submit">Skicka för granskning <span aria-hidden="true">↗</span></button><p id="form-message" class="form-message" role="status"></p><p class="form-fineprint">Tips syns först efter granskning. Läs vår <a href="integritet.html">integritetspolicy</a>.</p></form></section>
     <section class="how-section" id="sa-funkar-det"><p class="eyebrow">03 / SÅ FUNKAR DET</p><h2>ALLA SPÅR ÄR INTE SVAR.</h2><div class="how-grid"><article><span>01</span><h3>Hitta en pin</h3><p>Zooma in och läs vad någon säger sig ha sett.</p></article><article><span>02</span><h3>Lämna ditt tips</h3><p>Välj en ungefärlig plats och skriv en kort berättelse.</p></article><article><span>03</span><h3>Vi granskar</h3><p>Bidrag godkänns manuellt innan de syns för andra.</p></article></div></section>
+    <section class="how-section" id="om-trenden" aria-labelledby="trend-title"><p class="eyebrow">04 / BAKGRUND</p><h2 id="trend-title">Vad är Katten i hatten – och varför pratar folk om den?</h2><p><strong>Katten i hatten</strong> (The Cat in the Hat) är en karaktär från Dr. Seuss barnbok. Den rödvitrandiga hatten gör figuren lätt att känna igen. Sökningar efter Katten i hatten kan handla om filmen, dräkter och kostymer, men också om den trend där figuren uppmärksammas på sociala medier.</p><p>Här samlar vi en separat, humoristisk version av fenomenet: en <strong>Katten i hatten-karta</strong> med påhittade rapporter runt om i Sverige. Markeringarna visar inte bekräftade observationer. Vill du läsa mer om projektet och hur rapporterna hanteras? <a href="om.html">Läs om observationskartan</a>.</p></section>
   </main>
   <footer><div class="footer-main"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">K<span class="hat-brim"></span></span><span>KATTEN <em>I</em> HATTEN<small>OBSERVATIONSKARTAN</small></span></a><p>En lekfull samling rykten, påståenden och märkliga sammanträffanden.</p></div><div class="footer-links"><a href="om.html">Om sidan</a><a href="kontakt.html">Kontakt</a><a href="integritet.html">Integritet</a><a href="admin.html">Administration</a></div></div><div class="footer-bottom"><span>© 2026 Katten i hatten</span><span>Inget är verifierat.</span></div></footer>
 </body>
