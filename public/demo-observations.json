@@ -1,1 +1,319 @@
-{"observations":[{"id":1,"place":"Kiruna","observed_on":"2026-10-02","description":"En rödvit hatt siktades på en busskur. Vittnet hann aldrig se vem som bar den.","lat":67.86,"lng":20.23,"source":"demo"},{"id":2,"place":"Luleå","observed_on":"2026-09-28","description":"Någon beställde mjölk i hatt och försvann innan kvittot kom.","lat":65.58,"lng":22.15,"source":"demo"},{"id":3,"place":"Umeå","observed_on":"2026-10-05","description":"Randiga skuggor vid älven, enligt en mycket bestämd förbipasserande.","lat":63.83,"lng":20.26,"source":"demo"},{"id":4,"place":"Östersund","observed_on":"2026-09-17","description":"En hatt stack upp bakom en snöhög som inte borde ha funnits i september.","lat":63.18,"lng":14.64,"source":"demo"},{"id":5,"place":"Sundsvall","observed_on":"2026-10-01","description":"Ett paraply gick åt fel håll i motvind. Katten misstänks.","lat":62.39,"lng":17.31,"source":"demo"},{"id":6,"place":"Gävle","observed_on":"2026-09-24","description":"Två vittnen såg en hatt. De är oense om katten.","lat":60.67,"lng":17.14,"source":"demo"},{"id":7,"place":"Uppsala","observed_on":"2026-10-08","description":"En märkligt artig jamning hördes utanför biblioteket.","lat":59.86,"lng":17.64,"source":"demo"},{"id":8,"place":"Stockholm","observed_on":"2026-10-10","description":"En randig siluett tog sista platsen på tunnelbanan.","lat":59.33,"lng":18.06,"source":"demo"},{"id":9,"place":"Örebro","observed_on":"2026-09-20","description":"Någon lämnade fotspår och en fråga om fika.","lat":59.27,"lng":15.21,"source":"demo"},{"id":10,"place":"Karlstad","observed_on":"2026-10-04","description":"En hatt tycktes vinka från andra sidan Klarälven.","lat":59.38,"lng":13.5,"source":"demo"},{"id":11,"place":"Göteborg","observed_on":"2026-10-09","description":"Spårvagnsföraren rapporterade en ovanligt välklädd passagerare.","lat":57.71,"lng":11.97,"source":"demo"},{"id":12,"place":"Jönköping","observed_on":"2026-09-29","description":"Katten sågs enligt uppgift balansera på en osynlig linje vid Vättern.","lat":57.78,"lng":14.16,"source":"demo"},{"id":13,"place":"Kalmar","observed_on":"2026-10-06","description":"En randig hatt dök upp på ett vykort som ingen mindes att ha köpt.","lat":56.66,"lng":16.36,"source":"demo"},{"id":14,"place":"Halmstad","observed_on":"2026-09-22","description":"Ett kort jam hördes på stranden när solen gick ned.","lat":56.67,"lng":12.86,"source":"demo"},{"id":15,"place":"Malmö","observed_on":"2026-10-11","description":"En mystisk hatt tog en selfie vid kanalen. Kameran var tom.","lat":55.61,"lng":13,"source":"demo"}]}
+{
+  "observations": [
+    {
+      "id": 1,
+      "place": "Kiruna",
+      "observed_on": "2026-10-02",
+      "description": "En rödvit hatt siktades på en busskur. Vittnet hann aldrig se vem som bar den.",
+      "lat": 67.86,
+      "lng": 20.23,
+      "source": "demo"
+    },
+    {
+      "id": 2,
+      "place": "Luleå",
+      "observed_on": "2026-09-28",
+      "description": "Någon beställde mjölk i hatt och försvann innan kvittot kom.",
+      "lat": 65.58,
+      "lng": 22.15,
+      "source": "demo"
+    },
+    {
+      "id": 3,
+      "place": "Umeå",
+      "observed_on": "2026-10-05",
+      "description": "Randiga skuggor vid älven, enligt en mycket bestämd förbipasserande.",
+      "lat": 63.83,
+      "lng": 20.26,
+      "source": "demo"
+    },
+    {
+      "id": 4,
+      "place": "Östersund",
+      "observed_on": "2026-09-17",
+      "description": "En hatt stack upp bakom en snöhög som inte borde ha funnits i september.",
+      "lat": 63.18,
+      "lng": 14.64,
+      "source": "demo"
+    },
+    {
+      "id": 5,
+      "place": "Sundsvall",
+      "observed_on": "2026-10-01",
+      "description": "Ett paraply gick åt fel håll i motvind. Katten misstänks.",
+      "lat": 62.39,
+      "lng": 17.31,
+      "source": "demo"
+    },
+    {
+      "id": 6,
+      "place": "Gävle",
+      "observed_on": "2026-09-24",
+      "description": "Två vittnen såg en hatt. De är oense om katten.",
+      "lat": 60.67,
+      "lng": 17.14,
+      "source": "demo"
+    },
+    {
+      "id": 7,
+      "place": "Uppsala",
+      "observed_on": "2026-10-08",
+      "description": "En märkligt artig jamning hördes utanför biblioteket.",
+      "lat": 59.86,
+      "lng": 17.64,
+      "source": "demo"
+    },
+    {
+      "id": 8,
+      "place": "Stockholm",
+      "observed_on": "2026-10-10",
+      "description": "En randig siluett tog sista platsen på tunnelbanan.",
+      "lat": 59.33,
+      "lng": 18.06,
+      "source": "demo"
+    },
+    {
+      "id": 9,
+      "place": "Örebro",
+      "observed_on": "2026-09-20",
+      "description": "Någon lämnade fotspår och en fråga om fika.",
+      "lat": 59.27,
+      "lng": 15.21,
+      "source": "demo"
+    },
+    {
+      "id": 10,
+      "place": "Karlstad",
+      "observed_on": "2026-10-04",
+      "description": "En hatt tycktes vinka från andra sidan Klarälven.",
+      "lat": 59.38,
+      "lng": 13.5,
+      "source": "demo"
+    },
+    {
+      "id": 11,
+      "place": "Göteborg",
+      "observed_on": "2026-10-09",
+      "description": "Spårvagnsföraren rapporterade en ovanligt välklädd passagerare.",
+      "lat": 57.71,
+      "lng": 11.97,
+      "source": "demo"
+    },
+    {
+      "id": 12,
+      "place": "Jönköping",
+      "observed_on": "2026-09-29",
+      "description": "Katten sågs enligt uppgift balansera på en osynlig linje vid Vättern.",
+      "lat": 57.78,
+      "lng": 14.16,
+      "source": "demo"
+    },
+    {
+      "id": 13,
+      "place": "Kalmar",
+      "observed_on": "2026-10-06",
+      "description": "En randig hatt dök upp på ett vykort som ingen mindes att ha köpt.",
+      "lat": 56.66,
+      "lng": 16.36,
+      "source": "demo"
+    },
+    {
+      "id": 14,
+      "place": "Halmstad",
+      "observed_on": "2026-09-22",
+      "description": "Ett kort jam hördes på stranden när solen gick ned.",
+      "lat": 56.67,
+      "lng": 12.86,
+      "source": "demo"
+    },
+    {
+      "id": 15,
+      "place": "Malmö",
+      "observed_on": "2026-10-11",
+      "description": "En mystisk hatt tog en selfie vid kanalen. Kameran var tom.",
+      "lat": 55.61,
+      "lng": 13,
+      "source": "demo"
+    },
+    {
+      "id": 16,
+      "place": "Skellefteå",
+      "observed_on": "2026-09-19",
+      "description": "En lång skugga med hög hatt syntes bakom en stängd butik. När vittnet vände sig om var den borta.",
+      "lat": 64.75,
+      "lng": 20.95,
+      "source": "demo"
+    },
+    {
+      "id": 17,
+      "place": "Piteå",
+      "observed_on": "2026-10-03",
+      "description": "En röd rand gled förbi ett upplyst fönster. Ingen kunde förklara hur den hamnat så högt upp.",
+      "lat": 65.32,
+      "lng": 21.48,
+      "source": "demo"
+    },
+    {
+      "id": 18,
+      "place": "Härnösand",
+      "observed_on": "2026-09-26",
+      "description": "En förbipasserande tyckte sig se en hög hatt på kajen, trots att platsen var tom.",
+      "lat": 62.63,
+      "lng": 17.94,
+      "source": "demo"
+    },
+    {
+      "id": 19,
+      "place": "Falun",
+      "observed_on": "2026-10-07",
+      "description": "En randig figur sågs i ögonvrån nära torget. Två personer beskrev olika färger.",
+      "lat": 60.6,
+      "lng": 15.63,
+      "source": "demo"
+    },
+    {
+      "id": 20,
+      "place": "Västerås",
+      "observed_on": "2026-10-04",
+      "description": "Något med rödvit topp försvann bakom stationshuset precis före avgång.",
+      "lat": 59.61,
+      "lng": 16.54,
+      "source": "demo"
+    },
+    {
+      "id": 21,
+      "place": "Eskilstuna",
+      "observed_on": "2026-10-06",
+      "description": "En ovanligt hög hatt observerades genom ett bussfönster. Ingen stod kvar när bussen stannade.",
+      "lat": 59.37,
+      "lng": 16.51,
+      "source": "demo"
+    },
+    {
+      "id": 22,
+      "place": "Norrköping",
+      "observed_on": "2026-09-30",
+      "description": "Vittnet såg en randig form på bron, men mobilbilden visade bara en suddig reflex.",
+      "lat": 58.59,
+      "lng": 16.18,
+      "source": "demo"
+    },
+    {
+      "id": 23,
+      "place": "Linköping",
+      "observed_on": "2026-10-08",
+      "description": "En hatt syntes över en häck. Det märkliga var att ingen verkade finnas under den.",
+      "lat": 58.41,
+      "lng": 15.62,
+      "source": "demo"
+    },
+    {
+      "id": 24,
+      "place": "Visby",
+      "observed_on": "2026-09-23",
+      "description": "Någon hörde tassande steg bakom ringmuren. Vid hörnet syntes bara en röd rand.",
+      "lat": 57.64,
+      "lng": 18.29,
+      "source": "demo"
+    },
+    {
+      "id": 25,
+      "place": "Trollhättan",
+      "observed_on": "2026-10-09",
+      "description": "En siluett med cylinderformad hatt passerade vid vattnet. Vittnet tappade den ur sikte.",
+      "lat": 58.28,
+      "lng": 12.29,
+      "source": "demo"
+    },
+    {
+      "id": 26,
+      "place": "Borås",
+      "observed_on": "2026-10-02",
+      "description": "En kort sekund syntes rödvita ränder i en skyltfönsterreflex. Gatan bakom var tom.",
+      "lat": 57.72,
+      "lng": 12.94,
+      "source": "demo"
+    },
+    {
+      "id": 27,
+      "place": "Skövde",
+      "observed_on": "2026-10-01",
+      "description": "En mössa eller hatt, ovanligt hög, stack upp bakom ett plank och sjönk sedan ner.",
+      "lat": 58.39,
+      "lng": 13.85,
+      "source": "demo"
+    },
+    {
+      "id": 28,
+      "place": "Växjö",
+      "observed_on": "2026-10-10",
+      "description": "En uppgift om en randig hatt vid sjön spreds mellan tre personer. Ingen såg samma sak.",
+      "lat": 56.88,
+      "lng": 14.81,
+      "source": "demo"
+    },
+    {
+      "id": 29,
+      "place": "Kristianstad",
+      "observed_on": "2026-09-27",
+      "description": "En gestalt med märkligt hög huvudbonad korsade torget precis när belysningen blinkade.",
+      "lat": 56.03,
+      "lng": 14.16,
+      "source": "demo"
+    },
+    {
+      "id": 30,
+      "place": "Helsingborg",
+      "observed_on": "2026-10-12",
+      "description": "En rödvit skepnad syntes vid vattnet. Vid närmare kontroll gick den inte att hitta.",
+      "lat": 56.05,
+      "lng": 12.69,
+      "source": "demo"
+    },
+    {
+      "id": 31,
+      "place": "Lund",
+      "observed_on": "2026-10-13",
+      "description": "Ett vittne berättade om en hatt som stack upp över ett cykelställ utan synlig bärare.",
+      "lat": 55.7,
+      "lng": 13.19,
+      "source": "demo"
+    },
+    {
+      "id": 32,
+      "place": "Ystad",
+      "observed_on": "2026-10-05",
+      "description": "En randig form syntes genom dimman vid hamnen. När dimman lättade var den borta.",
+      "lat": 55.43,
+      "lng": 13.82,
+      "source": "demo"
+    },
+    {
+      "id": 33,
+      "place": "Trelleborg",
+      "observed_on": "2026-09-21",
+      "description": "Något som liknade en hög hatt syntes längst bort på kajen innan ett fartyg passerade.",
+      "lat": 55.38,
+      "lng": 13.16,
+      "source": "demo"
+    },
+    {
+      "id": 34,
+      "place": "Motala",
+      "observed_on": "2026-10-11",
+      "description": "En lång skugga med hatt syntes på gångvägen. Vittnet kunde inte hitta någon som kastade den.",
+      "lat": 58.54,
+      "lng": 15.05,
+      "source": "demo"
+    },
+    {
+      "id": 35,
+      "place": "Nyköping",
+      "observed_on": "2026-10-14",
+      "description": "En randig topp skymtade på andra sidan gatan i skymningen. Den försvann bakom en buss.",
+      "lat": 58.75,
+      "lng": 17.01,
+      "source": "demo"
+    }
+  ]
+}
