@@ -19,14 +19,14 @@ function showObservations(observations, demo) {
   pins.clearLayers();
   for (const item of observations) {
     const popup = document.createElement('div');
-    popup.append(textElement('div', 'popup-label', item.source === 'demo' ? 'Exempelobservation' : 'Insänt tips'));
+    popup.append(textElement('div', 'popup-label', 'Obekräftad rapport'));
     popup.append(textElement('div', 'popup-title', item.place));
     popup.append(textElement('div', 'popup-date', new Intl.DateTimeFormat('sv-SE', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${item.observed_on}T12:00:00Z`))));
     popup.append(textElement('p', 'popup-desc', item.description));
     L.marker([item.lat, item.lng], { icon: pinIcon }).bindPopup(popup).addTo(pins);
   }
   document.getElementById('map-count').textContent = `${observations.length} ${observations.length === 1 ? 'observation' : 'observationer'}`;
-  document.getElementById('map-status').textContent = demo ? 'Exempelobservationer visas' : 'Påstådda observationer';
+  document.getElementById('map-status').textContent = 'Obekräftade rapporter';
 }
 
 async function loadObservations() {
@@ -86,7 +86,7 @@ form.addEventListener('submit', async event => {
 });
 
 if (location.hostname.endsWith('.github.io')) {
-  document.querySelector('.hero-note').textContent = 'Detta är en förhandsvisning med påhittade exempel. Tipsfunktionen öppnar när Cloudflare är anslutet.';
+  document.querySelector('.hero-note').textContent = 'Förinlagda berättelser är fiktiva. Tipsfunktionen öppnar när Cloudflare är anslutet.';
   document.getElementById('form-message').textContent = 'Tips kan inte skickas i denna förhandsvisning.';
   form.querySelector('button[type="submit"]').disabled = true;
 } else {
